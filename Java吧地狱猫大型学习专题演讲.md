@@ -488,55 +488,30 @@ Promise 对象是一个代理对象（代理一个值），被代理的值在Pro
 
 第三步，理论归理论，再伟大的理论也得落地啊，咱们来品尝一个小例子吧！
 
+```
 //是否关闭车门
 
 var closeDoor = false;
-
-
-
 // 去北京八达岭老虎园游玩
 
 var goToZoo = new Promise(
-
     function (resolve, reject) {
-
         if (closeDoor) {
-
             var happy = {
-
                 see: '优美的动物和景色',
-
                 eat: '园区食堂的美食',
-
 buy: '纪念品',
 
 photo:'一家人合影留念'
-
             };
-
             resolve(happy); // fulfilled
-
         } else {
-
             var shit = new Error('我是老虎，我要咬死你！');
-
             reject(shit); // reject
-
         }
-
-
-
     }
-
 );
-
-
-
- 
-
-
-
- 
+```
 
 亲爱的吧友们，这个例子不难理解吧？
 
